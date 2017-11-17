@@ -16,14 +16,14 @@ export default class Header extends React.Component {
     state = {
         left: 0,
         firstChild: {}
-    }
+    }   
 
     search=(event)=>{
         if (event.key === "Enter") {
             let t= this.refs.search.value
             this.refs.search.value='';
             this.props.searchBook(t);
-            return (this.props.history.push(`/snails/search/${t}`))
+            return (this.props.history.push(`/snails/search${t}`))
         }
     }
 

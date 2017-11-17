@@ -28,7 +28,7 @@ export default class MainLayout extends React.Component {
                     <Route exact path="/snails/" component={BookList}/>
                     <Route path="/snails/category:id" component= {BookList}/>
                     <Route path="/snails/buy" component= {BookList}/>
-                    <Route path="/snails/search/:search" component= {BookList}/>
+                    <Route path="/snails/search:search" component= {BookList}/>
                     <Route path="/snails/basket:id" component= {BookList}/>
                     <Route path="/snails/pages:id" component= {BookList}/>
                     <Route path="/snails/admin" component= {AdminPanel}/>
