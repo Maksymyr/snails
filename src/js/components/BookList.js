@@ -63,7 +63,7 @@ const mapStateToProps = (state, ownProps) => {
         }
     } 
     else {
-        if (ownProps.match.url == '/buy') {
+        if (ownProps.match.url == '/snails/buy') {
             return {books: state.bought}
         }
         else
@@ -95,7 +95,7 @@ export default class BookList extends React.Component {
     }
     componentDidMount(){ 
         window.addEventListener("resize", () => this.forceUpdate())
-        if (this.props.match.url != '/buy') 
+        if (this.props.match.url != '/snails/buy') 
             this.setState({ books: this.state.books.sort((item, nextItem) => (item.rating < nextItem.rating) ? 1 : (item.rating > nextItem.rating) ? -1 : 0), check: null });
     }
     componentWillUnmount(){
@@ -198,7 +198,7 @@ export default class BookList extends React.Component {
                                
                 <Filter />
                 <div> 
-                        {this.props.match.url == '/buy' || this.props.match.url == '/basketl_d' ? null : 
+                        {this.props.match.url == '/snails/buy' || this.props.match.url == '/snails/basketl_d' ? null : 
                       <Category />  
                     }     
                     <div className="book-list-main">
