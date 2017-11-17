@@ -49,7 +49,7 @@ export default class HeaderSlider extends React.Component{
         
         {someBooks.map((item, index) => {
         return(
-        <Link to='/' key={index}><img src={item.img}  style={{width: x +'px', height: 0.5 * x + 'px'}} /></Link>
+        <Link to='/snails/' key={index}><img src={item.img}  style={{width: x +'px', height: 0.5 * x + 'px'}} /></Link>
         )
         } )}
         </div>

@@ -148,7 +148,7 @@ export default class BookList extends React.Component {
                 for(var i=1; i<Math.floor(this.props.l/21)+2; i++){
                     if(+this.props.pages!=i){
                         if(i==1){
-                            a[i]=<Link to="/" onClick={this.scrolling} key={i}><p className='pageP'>1</p></Link>
+                            a[i]=<Link to="/snails/" onClick={this.scrolling} key={i}><p className='pageP'>1</p></Link>
                         }else{
                             a[i]=<Link to={`/snails/pages${i}`} onClick={this.scrolling} key={i}><p className='pageP'>{i} </p></Link>
                         }

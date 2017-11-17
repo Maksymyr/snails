@@ -98,7 +98,7 @@ export default class Category extends React.Component{
                         <div className="category_body" ref="category_body">
                         <h3 onClick={this.handleTest} ref="title">Категории:</h3>
                             {this.props.category.map((item, index) =>
-                                <Link onClick={this.scrolling} key={index} className="category__link" to={"/category" + index}>{item}</Link>)}
+                                <Link onClick={this.scrolling} key={index} className="category__link" to={"/snails/category" + index}>{item}</Link>)}
                         </div>
                     </div>
             </div>

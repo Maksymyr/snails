@@ -23,7 +23,7 @@ export default class Header extends React.Component {
             let t= this.refs.search.value
             this.refs.search.value='';
             this.props.searchBook(t);
-            return (this.props.history.push(`/search/${t}`))
+            return (this.props.history.push(`/snails/search/${t}`))
         }
     }
 
@@ -66,7 +66,7 @@ export default class Header extends React.Component {
         return(
             <header  className="header">
                 <div className='head-center'>
-                <Link to='/' onClick={this.scrollingUp}className='logo-wrapper'> 
+                <Link to='/snails/' onClick={this.scrollingUp}className='logo-wrapper'> 
                     <div style={{backgroundImage: 'url('+ require("../../image/logo.png")+')'}} className='logo-snail'></div>
                     <h1 className="page-title">Snails</h1>
                 </Link>
@@ -78,9 +78,9 @@ export default class Header extends React.Component {
                 
                 
                 <nav>
-                <Link to='/buy' onClick = {this.scrolling}><div className='menu-links menu buy'>Купленные книги</div></Link>
-                <Link to={'/basket'+"l_d"} onClick = {this.scrolling}><div className='menu-links menu love'>Понравившиеся книги</div></Link>
-                <Link to='/basket' className='menu-links menu' onClick = {this.scrolling}>Корзина<i className="menu-cart fa fa-shopping-cart" aria-hidden="true"></i></Link>
+                <Link to='/snails/buy' onClick = {this.scrolling}><div className='menu-links menu buy'>Купленные книги</div></Link>
+                <Link to={'/snails/basket'+"l_d"} onClick = {this.scrolling}><div className='menu-links menu love'>Понравившиеся книги</div></Link>
+                <Link to='/snails/basket' className='menu-links menu' onClick = {this.scrolling}>Корзина<i className="menu-cart fa fa-shopping-cart" aria-hidden="true"></i></Link>
                 </nav>
                     
                 </div> 

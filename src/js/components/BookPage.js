@@ -102,7 +102,7 @@ export default  class BookPage extends React.Component{
                             if(this.props.item.author == itm.author && counter <=2 ){
                                 counter++
                                 // console.log(index)
-                                return  <Link to={`page${itm.code}`} key={index}><div  className="small_book">
+                                return  <Link to={`/snails/page${itm.code}`} key={index}><div  className="small_book">
                                         <img id="imeg" src={itm.img}/>
                                         <p>{itm.name}</p>
                                         </div></Link>
