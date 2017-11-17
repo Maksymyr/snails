@@ -40,7 +40,7 @@ module.exports = {
         include: path.join(__dirname, 'src'),
         loaders: ['style', 'css?sourceMap', 'postcss', 'sass']
       },
-      { test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/, loader: 'url-loader?limit=100000' }
+      { test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/, loader: 'url-loader?limit=1000000' }
     ]
   }
 };

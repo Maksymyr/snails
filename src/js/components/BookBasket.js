@@ -73,7 +73,7 @@ export default class BookBasket extends React.Component {
                                 <input onChange={this.handlePrice} className='basket-number' type='number' ref='number' defaultValue={this.state.price} min='1' max='99'/>
                             </div>
                             
-                            <span className="main_price">{`${this.props.books.price*this.state.price} +грн.`}</span>
+                            <span className="main_price">{`${this.props.books.price*this.state.price} грн.`}</span>
                         </div>                        
                     </div>
 
