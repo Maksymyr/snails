@@ -1,0 +1,9 @@
+.items {
+  display: flex;
+  flex-flow: column;
+  .item {
+    padding: 8px 15px 20px;
+    width: 100%;
+    transition: 0.2s;
+  }
+}

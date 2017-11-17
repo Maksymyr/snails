@@ -1,0 +1,62 @@
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.add-book{
+    margin-left: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    h3{
+        font-size: 25px;
+        margin: 10px 0;
+
+    }
+    .admin-form{
+        margin-bottom: 10px;
+
+        input, textarea{
+            font-family: arial;
+            padding-left: 10px;
+            width: 300px;
+            height: 50px;
+            display: block;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #2c2525;
+            color: #2c2525;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        textarea{
+            height: 100px;
+        }
+
+    }
+    button{
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #2c2525;
+        background: #2c2525;
+        color: #ffd56d;
+        cursor: pointer;
+    }
+}
+    #api_btn{
+        margin-bottom: 10px;
+    }
+    #api_search{
+        width: 250px;
+        padding-left: 10px;
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid #2c2525;
+        height: 50px;
+        margin-bottom: 10px;
+        
+        
+    
+    }

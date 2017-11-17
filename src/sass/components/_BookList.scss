@@ -1,0 +1,30 @@
+div.book-list-main{
+    min-height: 400px;
+    height: 100%;
+    .page{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        a{
+            padding: 10px
+        }
+        // a:after{
+        //     content: " ";
+        // }
+        // a:before{
+        //     content: " ";
+        // }
+    }
+    .page:after{
+        content: ">";
+    }
+    .page::before{
+        content: "<";
+    }
+    .pageP{
+        display: inline-block;
+        
+    }
+   
+}

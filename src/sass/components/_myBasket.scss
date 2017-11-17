@@ -1,0 +1,74 @@
+.basket_item{
+    width:800px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 35px 40px 25px 20px;
+    border-bottom: 2px solid #eee;
+    .delete_butn{
+        width: 35px;
+        height: 35px;
+        float: left;
+        margin-right: 20px;
+        background-size: 100%;
+        cursor: pointer;
+    }
+    .book_about{
+        width: 645px;
+        float: left;
+        position: relative;
+        img{
+            float: left;
+            width: 200px;
+            height: 320px;
+            margin-right: 10px;
+        }
+        .top_part{
+            float: left;
+            width: 66%;
+            margin-bottom: 3.4rem;
+            h3{
+                text-align: center;
+                word-wrap: break-word;
+                max-width: 307px;
+                float: left;
+                font-size: 2rem;
+            }
+            .summ{
+                float: right;
+                font-size: 1.7rem
+            }
+        }
+        
+        .prices{
+            float: left;
+            width: 66%;
+            //height: 66px;
+            .input_container{
+                display: inline-block;
+                position: absolute;
+                right: 150px;
+                input{
+                    font-size: 1.6rem;
+                    height: 28px;
+                    width: 42px;
+                    padding-left: 7px;
+                }
+            }
+            .main_price{
+                float: right;
+                font-size: 2.5rem;
+                margin-top: 2px;
+                
+            }
+            .elem_price{
+                font-size: 2.5rem;
+                display: inline-block;
+                margin-top: 2px;
+            }
+
+        }
+    }
+    
+
+}

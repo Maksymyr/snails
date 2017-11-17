@@ -1,0 +1,64 @@
+
+.footer-slider-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px;
+    h2{
+      margin: 0 auto;
+      display: block;
+      width: 360px;
+      font: 25px/30px 'Poiret One', cursive;
+
+    }
+
+  .slider-block{
+    overflow: hidden;
+    min-height: 150px;
+    width: 330px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+  }
+  .slider-inline{
+    position: absolute;
+    transition: 1s;
+    white-space: nowrap;
+    width: auto;
+    left: 0;
+    
+  }
+
+  img{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .btn-wrapper{
+    position: absolute;
+  }
+
+  .btn{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: 25px;
+    background: #ada6a3;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    color: #ffd56d;
+    top: 50%;
+  }
+  .btn-left{
+    left: 10%;
+    
+  }
+  .btn-right{
+    right: 10%;
+
+  }
+}

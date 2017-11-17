@@ -1,0 +1,57 @@
+html, body, p, span, input, textarea {
+    
+    //font-family: 'Poiret One', cursive;
+    font-family: 'El Messiri', sans-serif;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html, body {
+    font-size:10px;
+    line-height: 1.125;
+}
+ul {
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+   background-size: 100% 100%;
+    * {
+        box-sizing: border-box;
+    }
+}
+
+.wrapper {
+    margin: auto;
+    width: 100%;
+    display: table;
+}
+.notify-font {
+    
+    background-color: rgba(73, 71, 71, 0.699);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 45vh; 
+    z-index: 33;
+    .notify {
+        margin: auto;
+        font-size: 24px;
+        color: white;
+        background-color: rgba(46, 44, 44, 0.938);
+        width: 500px;
+        height: 50px;
+        text-align: center;
+        padding: 13px 0; 
+        border-radius: 20px;
+    }
+}

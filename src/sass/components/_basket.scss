@@ -1,0 +1,207 @@
+.clearfix:after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.nobasket{
+    p{
+        text-align: center;
+        margin: 20px auto;
+        display: block;
+        font-size: 25px;
+    }
+}
+.basket-list{
+    margin: 20px 0 0 0;
+    width: 80%;
+    margin: 0 auto;
+    .nobasket{
+        height: 400px;
+    }
+    h2{
+        font-size: 25px;
+        font-family: 'Poiret One', cursive;
+        height: 20px;
+        text-align: center;
+    }
+    .basket-book{
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        margin-top: 30px;
+
+        p{
+            font-size: 1em;
+        }
+
+        .basket-add-contacts{
+            margin: 0 auto;
+            width: 100%;
+            height: 200px;
+            p{
+                font-size: 18px; 
+            }
+            .contacts{
+                float: left;
+            }
+
+            
+        }
+
+        table{
+            width:80%;
+            border: solid 1px gray;
+            border-radius: 10px; 
+            margin-bottom: 1em;
+            font-size: 15px;
+            text-align: center;
+            .t1{
+                width: 120px;
+                border-right: solid 1px gray;
+            }
+            .t2{
+                width: 40%;
+                max-width: 300px;
+                border-right: solid 1px gray;
+            }
+            .t3{
+                width: 54px;
+                border-right: solid 1px gray;
+            }
+            .t4{
+                width: 61px;
+                border-right: solid 1px gray;
+            }
+        }
+
+        .basket-buy{
+            width: 70px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border: none;
+            display: block;
+            background: #514847;
+            font-family: 'Poiret One', cursive;
+            margin-top: 1em;
+            margin-bottom: 1em; 
+            border-radius: 5px;
+            color: #ffd56d;
+            font-size: 17px;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
+               opacity: 0.7;
+            }
+        }
+
+        .basket-book-one{
+            width: 100%;
+            height: 150px;
+            border: solid 1px gray;
+            border-radius: 10px; 
+            margin-bottom:10px; 
+
+            .basket-img{
+                width: 120px;
+                height: 100%;
+                padding: 10px;
+                float: left;
+                border-right: solid 1px gray;
+            }
+            .name-book{
+                height: 100%;
+                width: 40%;
+                max-width: 300px;
+                font-size: 20px;
+                padding: 10px;
+                float: left;
+                border-right: solid 1px gray;
+                h3{
+                    margin-top:2em; 
+                }
+            }
+            .cost{
+                width: 10%;
+                font-size: 20px;
+                height: 100%;
+                padding: 10px;
+                float: left;
+                border-right: solid 1px gray;
+                p{
+                    margin-top: 3em;
+                    text-align: center;
+                }
+            }
+            .basket-input{
+                display: block;
+                margin: 0 auto;
+                height: 100%;
+                padding: 10px;
+                float: left;
+                border-right: solid 1px gray;
+                .basket-number{
+                    width: 10%;
+                    padding:0px; 
+                    font-size:19px; 
+                    text-align:center; 
+                    border-width:1px; 
+                    border-radius:12px; 
+                    color:#000000; 
+                    border-color:#b3b3b3; 
+                    border-style:solid; 
+                    box-shadow: 0px 0px 5px 0px rgba(42, 42, 42, 0.33);
+                    font-weight:bold; 
+                    font-style:none; 
+                    font-family:monospace;
+                    margin-top: 3em;
+                    width: 41px;
+                }
+            }
+        }
+        .basket-button{
+            width: 70px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border: none;
+            display: block;
+            background: #514847;
+            font-family: 'Poiret One', cursive;
+            margin: 6% auto;
+            border-radius: 5px;
+            color: #ffd56d;
+            font-size: 17px;
+            text-decoration: none;
+            cursor: pointer;
+            
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .cart-inp{
+            width: 200px;
+            height: 30px;
+            margin: 5px 0;
+            padding-left: 5px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        .del-all-wrapper{
+            float: right;
+            width: 26%;
+            margin-bottom: 10px;
+        }
+    
+        .del-all{
+            width: 100px;
+            margin: 0;
+        }
+
+        hr{
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    }
+}
