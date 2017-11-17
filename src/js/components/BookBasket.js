@@ -19,7 +19,7 @@ export default class BookBasket extends React.Component {
         }
     }
     state={
-        price: ''
+        price: 1
     }
 
     componentDidMount = () =>{
@@ -64,7 +64,7 @@ export default class BookBasket extends React.Component {
                         <img  src={this.props.books.img}/>
                         <div className="top_part">
                             <h3 className="basket_book_name">{this.props.books.name}</h3>
-                            <p className="summ">Сумма</p>
+                            <p className="summ">Сумма</p>   
                         </div>
                         <div className="prices">
                             <div className="elem_price">{`${this.props.books.price} грн.`}</div>
@@ -73,7 +73,7 @@ export default class BookBasket extends React.Component {
                                 <input onChange={this.handlePrice} className='basket-number' type='number' ref='number' defaultValue={this.state.price} min='1' max='99'/>
                             </div>
                             
-                            <span className="main_price">{`${this.props.books.price*this.state.price} грн.`}</span>
+                            <span className="main_price">{`${this.props.books.price*this.state.price} +грн.`}</span>
                         </div>                        
                     </div>
 
