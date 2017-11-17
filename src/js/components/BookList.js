@@ -203,7 +203,7 @@ export default class BookList extends React.Component {
                     }     
                     <div className="book-list-main">
                         <div id="w77"   className="book-list"  ref="book_list"> 
-                        {this.props.match.url=='/' && document.documentElement.clientWidth > 852 ? <HeaderSlider /> : null}  
+                        {this.props.match.url=='/snails/' && document.documentElement.clientWidth > 852 ? <HeaderSlider /> : null}  
                            
                             {document.documentElement.clientWidth > 852 ? this.state.books.slice(0,21).map((item, index) => <Book item={item} key={index} index={index}/>): this.state.books.slice(0,7).map((item, index) => <Book item={item} key={index} index={index}/>)} 
                             {/* {this.state.books?this.state.books.slice(0,21).map((item, index) => <Book item={item} key={index} index={index}/>):null} */}

@@ -6,7 +6,6 @@ import Basket from '../components/Basket'
 import BookPage from '../components/BookPage'
 import { Route, Switch, Link } from 'react-router-dom';
 import BookList from '../components/BookList';
-// import HeaderSlider from '../components/HeaderSlider';
 import AdminPanel from '../components/AdminPanel';
 import Notify from '../components/Notify';
 
@@ -35,7 +34,6 @@ export default class MainLayout extends React.Component {
                     <Route path="/snails/admin" component= {AdminPanel}/>
                     <Route path="/snails/buy" component={BookList}/>
                     <Route path="/snails/author/:idauthor" component={BookList}/>
-                    {/* <Route path="/add" component={AddPost}/> */}
                     <Route path="/snails/page:id" component = {BookPage} />
                     <Route path="/snails/basket" component={Basket}/>
                     <Route path="*" component={() => <div>Page Not Found</div>}/>
