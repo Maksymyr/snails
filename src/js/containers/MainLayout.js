@@ -26,18 +26,18 @@ export default class MainLayout extends React.Component {
             <div className="wrapper">
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={BookList}/>
-                    <Route path="/category:id" component= {BookList}/>
-                    <Route path="/buy" component= {BookList}/>
-                    <Route path="/search/:search" component= {BookList}/>
-                    <Route path="/basket:id" component= {BookList}/>
-                    <Route path="/pages:id" component= {BookList}/>
-                    <Route path="/admin" component= {AdminPanel}/>
-                    <Route path="/buy" component={BookList}/>
-                    <Route path="/author/:idauthor" component={BookList}/>
+                    <Route exact path="/snails/" component={BookList}/>
+                    <Route path="/snails/category:id" component= {BookList}/>
+                    <Route path="/snails/buy" component= {BookList}/>
+                    <Route path="/snails/search/:search" component= {BookList}/>
+                    <Route path="/snails/basket:id" component= {BookList}/>
+                    <Route path="/snails/pages:id" component= {BookList}/>
+                    <Route path="/snails/admin" component= {AdminPanel}/>
+                    <Route path="/snails/buy" component={BookList}/>
+                    <Route path="/snails/author/:idauthor" component={BookList}/>
                     {/* <Route path="/add" component={AddPost}/> */}
-                    <Route path="/page:id" component = {BookPage} />
-                    <Route path="/basket" component={Basket}/>
+                    <Route path="/snails/page:id" component = {BookPage} />
+                    <Route path="/snails/basket" component={Basket}/>
                     <Route path="*" component={() => <div>Page Not Found</div>}/>
                 </Switch>
                 <div className="clear"></div>
