@@ -57,17 +57,12 @@ header.header {
         padding-left: 5px;
       }
       .search-icon{
-        height: 25px;
-        width: 25px;
-        background: white;
+        background: #fff;
         border: none;
-        -webkit-border-radius: 0 5px 5px 0;
         border-radius: 0;
-        border-left: none;
-        margin-left: -30px;
+        margin-left: -20px;
         cursor: pointer;
         display: inline-block;
-        vertical-align: middle;
       }
     }
   }
