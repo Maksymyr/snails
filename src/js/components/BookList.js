@@ -16,7 +16,6 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state, ownProps) => {
    console.log(ownProps.match.params)
-   alert("1");
 
     if(ownProps.match.params.id) {
         if(ownProps.match.url.replace(/[^a-z]/g, '')=='pages'){
@@ -47,7 +46,7 @@ const mapStateToProps = (state, ownProps) => {
             }), sidebar: state.sidebar, filter: state.filter,
         }
     }    
-    else if(ownProps.match.params.search.search) { 
+    else if(ownProps.match.params.search) { 
         return {books: state.books.filter((item, index) => {
             if (item.name.toLowerCase().includes(ownProps.match.params.search.toLowerCase())
             ||item.author.toLowerCase().includes(ownProps.match.params.search.toLowerCase())
