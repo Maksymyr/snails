@@ -12,14 +12,10 @@ const mapStateToProps = (state) => {
 @connect(mapStateToProps, mapDispatchToProps)
 export default class BookBasket extends React.Component {
     constructor(props){
-        super(props);
-        this.state={
-            cost:this.props.books.price,
-            updown:0
-        }
+        super(props)
     }
     state={
-        price: 1
+        price: ''
     }
 
     componentDidMount = () =>{
@@ -27,28 +23,6 @@ export default class BookBasket extends React.Component {
             let a=0;
             this.props.book.map((item)=>{if(item.code==this.props.books.code){a=a+1}})
             this.refs.number.value=a;
-            this.setState({cost: this.state.cost*a})
-            this.setState({updown: this.refs.number.value})
-            
-        }
-        this.props.allcost(this.state.cost, this.state.updown, this.refs.number.value);
-    }
-    cost = () =>{
-        this.setState({cost: this.state.cost*a})
-    }
-    updownbtn = () => {
-        console.log(this.props)
-        if(this.state.updown!=0){
-            if(this.state.updown>this.refs.number.value){
-                this.props.allcost(this.state.cost/this.state.updown*this.refs.number.value, this.state.updown, this.refs.number.value);
-                this.setState({cost: this.state.cost/this.state.updown*this.refs.number.value})
-                this.setState({updown: this.refs.number.value})
-            
-            }else{
-                this.props.allcost(this.state.cost/this.state.updown*this.refs.number.value, this.state.updown, this.refs.number.value);
-                this.setState({cost: this.state.cost/this.state.updown*this.refs.number.value})
-                this.setState({updown: this.refs.number.value})
-            }
             this.setState({price:a})
         }
     }
@@ -57,6 +31,14 @@ export default class BookBasket extends React.Component {
     }
 
     bookbuy = () =>{
+        // let a=0;
+        // for(var i=0; i<this.props.book.length; i++){
+        //     console.log('4s')
+        // if(this.props.book[i].code==this.props.books.code){
+        //     a=a+1
+        // }
+        // if(a==1){
+        //     console.log('1s')
             return(
                 <div className="basket_item">
                     <div onClick={this.del} className="delete_butn" style={{backgroundImage: 'url('+ require("../../icon/delete_from_basket.png")+')'}}></div>
@@ -64,7 +46,7 @@ export default class BookBasket extends React.Component {
                         <img  src={this.props.books.img}/>
                         <div className="top_part">
                             <h3 className="basket_book_name">{this.props.books.name}</h3>
-                            <p className="summ">Сумма</p>   
+                            <p className="summ">Сумма</p>
                         </div>
                         <div className="prices">
                             <div className="elem_price">{`${this.props.books.price} грн.`}</div>
@@ -100,6 +82,12 @@ export default class BookBasket extends React.Component {
                 // </div>
                 // </div>
             )
+        // }else{
+        //     console.log('2s')
+        //     return null
+        // }
+        // }
+        // return null
     }
 
     del = () =>{

@@ -12,12 +12,12 @@ const mapStateToProps = (state) => {
 
 @connect(mapStateToProps, mapDispatchToProps)
 export default class Basket extends React.Component {
-    constructor(props){
-        super(props),
-        this.state = {
-            allcost:0
-        }
-    }
+    // constructor(props){
+    //     super(props),
+    //     this.state = {
+    //         allcost:0
+    //     }
+    // }
       
     allcost = (x, y, z) => {
         if(y!=0){
@@ -65,7 +65,7 @@ export default class Basket extends React.Component {
                     <br/>
                 {/* <p className='clearfix'> Очистить корзину</p> */}
                 <div className='del-all-wrapper'>
-                <div>{this.state.allcost}</div>
+                {/* <div>{this.state.allcost}</div> */}
                 <button className='basket-button del-all' onClick={this.props.delallbasket}>Удалить всё</button>
                 </div>
                 <hr/>
