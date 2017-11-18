@@ -92,8 +92,17 @@ export default class Category extends React.Component{
     render(){
         return(
             <div ref="check_postion">
-                <div style={document.documentElement.clientWidth > 852 ? {width: "20%"} : {width: "95%", height: "70vh"}} id={this.props.visible? document.documentElement.clientWidth > 852 ? "w20" : "w100" : "w0"} 
-                className={this.state.toggleId ? document.documentElement.clientWidth > 852 ? "category_wrap relative_cat" : "category_wrap fixed_cat" : "category_wrap fixed_cat"} ref="wrapp"> 
+                <div 
+                //style={document.documentElement.clientWidth > 852 ? {width: "20%"} : {width: "95%", height: "70vh"}} 
+                id={this.props.visible? 
+                    //document.documentElement.clientWidth > 852 ? 
+                    "w20" //: "w100" 
+                    : "w0"} 
+                className={this.state.toggleId ? 
+                //document.documentElement.clientWidth > 852 ? 
+                "category_wrap relative_cat" : "category_wrap fixed_cat" 
+                //: "category_wrap fixed_cat"
+                } ref="wrapp"> 
                         <div className="category_hide" ref="hide_show" onClick={this.handleShow}>Category</div>
                         <div className="category_body" ref="category_body">
                         <h3 onClick={this.handleTest} ref="title">Категории:</h3>
