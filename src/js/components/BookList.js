@@ -16,6 +16,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state, ownProps) => {
    console.log(ownProps.match.params)
+   alert("1");
 
     if(ownProps.match.params.id) {
         if(ownProps.match.url.replace(/[^a-z]/g, '')=='pages'){
