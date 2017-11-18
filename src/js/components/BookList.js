@@ -46,7 +46,7 @@ const mapStateToProps = (state, ownProps) => {
             }), sidebar: state.sidebar, filter: state.filter,
         }
     }    
-    else if(ownProps.match.params.search) { 
+    else if(ownProps.match.url.includes('search')) { 
         return {books: state.books.filter((item, index) => {
             if (item.name.toLowerCase().includes(ownProps.match.params.search.toLowerCase())
             ||item.author.toLowerCase().includes(ownProps.match.params.search.toLowerCase())
