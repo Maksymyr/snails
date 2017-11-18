@@ -23,6 +23,7 @@ export default class Header extends React.Component {
             let t= this.refs.search.value
             this.refs.search.value='';
             this.props.searchBook(t);
+            event.preventDefault();
             return (this.props.history.push(`/snails/search/${t}`))
         }
     }

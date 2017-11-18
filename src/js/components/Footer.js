@@ -14,45 +14,16 @@ const mapStateToProps = (state, ownProps) => {
 export default class Footer extends React.Component{
 
     componentDidMount () {
-        //this.handleScrollStick()
         setTimeout(() => {
-            // console.log(this.refs.footer.offsetTop)
             this.props.setStick(this.refs.footer.offsetTop)
         }, 1000);
         
         
     }
 
-    // handleScrollStick = () => {
-    //     window.onscroll = () => {
-
-    //         this.props.setStick()
-    //     }
-    // }
 
     render(){
 
-        // handleOnSubscribe = (event) => {
-            
-        //     console.log(this.refs)
-        //     for(let key in this.refs){
-        //         if(this.refs[key].value == ""){
-        //             event.preventDefault();
-        //             alert("fill in the form");
-        //             this.refs[key].focus();
-        //             break;
-        //         }
-        //         else{
-        //             if(this.refs.passwordInput.value != this.refs.passwordInput2.value){
-        //                 event.preventDefault();
-        //                 alert("Wrong Password");
-        //                 this.refs.passwordInput.focus()
-        //             }
-        //         }
-        //     }
-            
-    
-        // }
         return(
             <footer ref="footer">
                 <div className='footer-wrapper'>

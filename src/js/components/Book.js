@@ -32,8 +32,7 @@ export default class Book extends React.Component {
         window.scrollTo(0,0);
     }
     handleAlert = () => {
-        console.log(this)
-        // console.log(this.refs[])
+      
     }
     star = (x) =>{
         let stars = [];

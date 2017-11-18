@@ -15,7 +15,6 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mapStateToProps = (state, ownProps) => {
-   console.log(ownProps.match.url.includes('pages'))
 
     if(ownProps.match.params.id) {
         if(ownProps.match.url.includes('pages')){

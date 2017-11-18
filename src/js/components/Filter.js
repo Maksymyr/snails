@@ -24,12 +24,10 @@ export default class Filter extends React.Component {
 
     componentDidMount() {
         let count = 0;
-        // this.refs.selected.value = "raiting";
         this.props.books.map(item => { count++ })
         this.setState({count: count})
     }
     filtring = () => {
-        // console.log(this.refs.selected.value);
         this.props.filterBooks(this.refs.selected.value);
     }
     render() {

@@ -51,10 +51,7 @@ export default class FooterSlider extends React.Component{
     <span className='btn btn-right' onClick={this.handleClickRight}>&#62;</span>
     </div>)
   }
-    // componentDidMount(){
-    //   this.setState({watchedBooks})
 
-    // }
 
     render () {
         if(this.props.watchedBooks.length >= 5) {
