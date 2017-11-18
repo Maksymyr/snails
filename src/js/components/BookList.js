@@ -82,6 +82,7 @@ export default class BookList extends React.Component {
         }
     }
     componentWillReceiveProps(nextProps) {
+        alert('1')
         if(nextProps.books !== this.state.books) {
             this.setState({books: nextProps.books}); 
         }
@@ -94,15 +95,20 @@ export default class BookList extends React.Component {
         window.scrollTo(0,0);
     }
     componentDidMount(){ 
+        alert('2')
+        
         window.addEventListener("resize", () => this.forceUpdate())
         if (this.props.match.url != '/snails/buy') 
             this.setState({ books: this.state.books.sort((item, nextItem) => (item.rating < nextItem.rating) ? 1 : (item.rating > nextItem.rating) ? -1 : 0), check: null });
     }
     componentWillUnmount(){
+        alert('3')
+        
         window.removeEventListener("resize", () => this.forceUpdate())
     }
     componentDidUpdate(){
-
+        alert('4')
+        
         if(this.state.check == this.props.filter) {
             switch(this.state.check) {
                 case("name_a"):
@@ -132,7 +138,9 @@ export default class BookList extends React.Component {
         }    
     }
 
-    page = () =>{
+    page = () => {
+        alert('5')
+        
         if(document.documentElement.clientWidth > 852){
             if (this.state.books.length > 21 || this.props.l > 21) {
                 let a=[];
