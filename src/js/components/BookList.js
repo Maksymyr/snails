@@ -15,10 +15,10 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mapStateToProps = (state, ownProps) => {
-   console.log(ownProps.match.url)
+   console.log(ownProps.match.url.includes('pages'))
 
     if(ownProps.match.params.id) {
-        if(ownProps.match.url.replace(/[^a-z]/g, '')=='pages'){
+        if(ownProps.match.url.includes('pages')){
             if(document.documentElement.clientWidth > 852){
                 if(state.books.length>21){
                     let newBooks=state.books.slice((ownProps.match.params.id-1)*21, (ownProps.match.params.id-1)*21+21);
